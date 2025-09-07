@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debys Delicious Dishes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #a52a2a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #hero {
+      background-image: url('https://tb-static.uber.com/prod/image-proc/processed_images/412dfa77f3febafcffc2d98d45ff17ce/fb86662148be855d931b37d6c1e5fcbe.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #a52a2a;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .menu-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      width: 250px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #a52a2a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #8b1a1a;
+    }
+
+    #contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+
+    #contact-form input, #contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    #contact-form label {
+      font-weight: bold;
+    }
+
+    #contact-success {
+      color: green;
+      text-align: center;
+      margin-top: 10px;
+      display: none;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 700px) {
+      .menu-items {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Debys Delicious Dishes</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Welcome to Debys Delicious Dishes</h2>
+        <p>Experience the taste of tradition with our homemade recipes!</p>
+        <button onclick="window.location='#menu'">View Menu</button>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-card">
+                <img src="https://th.bing.com/th/id/OSK.3675f7aba10ba7be509bae69e9db13fd?w=205&h=102&rs=2&qlt=80&o=6&cdv=1&dpr=1.3&pid=16.1" alt="Traditional Beef Stew">
+                <h3>Traditional Beef Stew</h3>
+                <p>Slow-cooked beef with root vegetables and rich gravy.</p>
+                <span><strong>R150</strong></span>
+            </div>
+            <div class="menu-card">
+                <img src="https://clipkulture.com/wp-content/uploads/2021/03/mogodu-recipe.jpg?is-pending-load=1" alt="Mogodu">
+                <h3>Chicken Pot Pie</h3>
+                <p>Classic pie filled with tender chicken and creamy sauce.</p>
+                <span><strong>R165</strong></span>
+            </div>
+            <div class="menu-card">
+                <img src="https://th.bing.com/th/id/OIP.1psQgVlooKYtxLRDz0CEFgHaIN?w=161&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Vegetable Curry">
+                <h3>Hardbody Chicken</h3>
+                <p>Seasonal vegetables simmered in aromatic spices.</p>
+                <span><strong>R189</strong></span>
+            </div>
+            <div class="menu-card">
+                <img src="https://www.bing.com/th/id/OIP.v7k8vf8TxeAcjgrBm-nq5AHaE8?w=261&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Coke">
+                <h3>Coke</h3>
+                <p>Thirst quenching drink.</p>
+                <span><strong>R20</strong></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Debys Delicious Dishes is a family-owned restaurant serving traditional recipes passed down through generations. We believe in fresh ingredients, authentic flavors, and warm hospitality. Join us for a meal that feels like home!
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            <strong>Address:</strong> Kempton Park<br>
+            <strong>Email:</strong> hlulanintuli3@gmail.com<br>
+            <strong>Phone:</strong> 0718772206
+        </p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+            <div id="contact-success">Thank you for contacting us!</div>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Debys Delicious Dishes. All rights reserved.
+    </footer>
+
+    <script>
+    // Smooth scroll for navigation links
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Contact form handler
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('contact-success').style.display = 'block';
+        this.reset();
+        setTimeout(() => {
+            document.getElementById('contact-success').style.display = 'none';
+        }, 3000);
+    });
+    </script>
+</body>
+</html>
